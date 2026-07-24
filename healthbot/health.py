@@ -9,11 +9,11 @@ from dotenv import load_dotenv
 load_dotenv()
 
 import os
-HUGGINGFACEHUB_ACCESS_TOKEN = "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"
+
 llm = HuggingFaceEndpoint(
     repo_id="deepseek-ai/DeepSeek-V4-Pro",
     task="text-generation",
-    huggingfacehub_api_token=HUGGINGFACEHUB_ACCESS_TOKEN ,
+    huggingfacehub_api_token=os.getenv("HUGGINGFACEHUB_ACCESS_TOKEN"),
     temperature=0.8
 )
 st.header("HealthBot")
@@ -58,7 +58,7 @@ Immediate Relief:
 When to See a Doctor:
 • <One-line recommendation>
 
-Give me a short answer in hindi also
+Give me a short answer in hindi also 
 Disclaimer:
 This is only an AI-generated health suggestion and not a medical diagnosis. Please consult a qualified healthcare professional for an accurate diagnosis and treatment.
 """
