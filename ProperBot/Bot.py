@@ -23,6 +23,6 @@ while True:
         break
     result = model.invoke(chat_history)
     chat_history.append(result.content)
-    print("Ai Response : ",result.content)
+    print("Ai Response will : ",result.content)
 
 print(chat_history)
