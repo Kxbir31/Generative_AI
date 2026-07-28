@@ -17,7 +17,7 @@ llm = HuggingFaceEndpoint(
 model = ChatHuggingFace(llm = llm)
 chat_history = []
 while True:
-    user = input("Your Query :")
+    user = input("User Query :")
     chat_history.append(user)
     if user == "exit":
         break
