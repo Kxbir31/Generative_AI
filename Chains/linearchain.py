@@ -12,7 +12,7 @@ import os
 llm = HuggingFaceEndpoint(
     repo_id="deepseek-ai/DeepSeek-V4-Pro",
     task="text-generation",
-    huggingfacehub_api_token=HUGGINGFACEHUB_ACCESS_TOKEN,
+    huggingfacehub_api_token="HUGGINGFACEHUB_ACCESS_TOKEN",
     temperature=0.8
 )
 
