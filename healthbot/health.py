@@ -19,8 +19,8 @@ llm = HuggingFaceEndpoint(
 st.header("HealthBot")
 symptoms = st.text_input("Enter Your Symptoms")
 time = st.text_input("From how long you are suffering from the Symptoms")
-age = st.text_input("Enter Your Age")
-gender = st.text_input("Enter Your Gender")
+age = st.text_input("Enter Your Age ")
+gender = st.text_input("Enter Your Gender ")
 
 template = PromptTemplate(
     input_variables=["symptoms", "time", "age", "gender"],
